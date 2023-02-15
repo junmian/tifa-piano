@@ -1,0 +1,163 @@
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-image: url("/assets/images/piano-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "Arvo", cursive;
+    color: white;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.5rem;
+    padding-top: 2rem;
+}
+
+.d,
+.r,
+.m,
+.f,
+.s,
+.l,
+.t,
+.o {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.d {
+    background-image: url("/assets/images/1-beat-rush.png");
+}
+
+.r {
+    background-image: url("/assets/images/2-somersault.png");
+}
+
+.m {
+    background-image: url("/assets/images/3-waterkick.png");
+}
+
+.f {
+    background-image: url("/assets/images/4-meteodrive.jpg");
+}
+
+.s {
+    background-image: url("/assets/images/5-dolphin-blow.png");
+}
+
+.l {
+    background-image: url("/assets/images/6-meteor-strike.png");
+}
+
+.t {
+    background-image: url("/assets/images/7-final-heaven1.png");
+}
+
+.o {
+    background-image: url("/assets/images/7-final-heaven2.png");
+}
+
+.set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 320px;
+    padding-top: 7%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px 2px #aaabac;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+}
+
+.note {
+    font-family: "Arvo", cursive;
+    outline: none;
+    border: 10px solid #404b69;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: #ad2462;
+    text-shadow: 2px 2px 5px #dbedf3;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+footer {
+    padding-top: 14%;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.about:link {
+    color: white;
+}
+
+.about:visited {
+    color: yellow;
+}
+
+.about:hover {
+    color: #ad2462;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .note {
+        font-size: 3.2rem;
+        line-height: 2.6;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 458px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    .note {
+        font-size: 2.2rem;
+        line-height: 3.2;
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .note {
+        font-size: 1.75rem;
+        line-height: 3;
+        width: 80px;
+        height: 80px;
+    }
+}
